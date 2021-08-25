@@ -1,0 +1,120 @@
+.card-button{
+    background-color: rgb(100, 77, 122);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#icon{
+
+    margin: auto;
+    padding: 5px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: rgb(100, 77, 122);
+    color: white;
+}
+
+.card{
+    border: none;
+}
+
+#cg1{
+
+    margin-left: 25%;
+    width: 50%;
+}
+
+#cg1 .card-button:hover{
+    background: rgb(255, 226, 60);
+    color: black;
+}
+
+#cg2{
+
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+#cg2 #price{
+
+    color: rgb(180, 179, 179);
+    font-size: 15px;
+}
+
+#cg2 #desc{
+
+    font-size: 13px;
+}
+
+#cg2 #cb{
+
+    width: 50%;
+}
+
+#cg2 .card-button:hover{
+    background: rgb(255, 226, 60);
+    color: black;
+}
+
+.card-footer{
+
+    background-color: white;
+    border: none;
+}
+
+#cg3{
+
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+#cg3 #date{
+
+    margin-top: 30px;
+    color: rgb(180, 179, 179);
+    font-size: 15px;
+}
+
+#cg3 #desc{
+
+    font-size: 13px;
+}
+
+#cg3 #cb2{
+    background-color: rgb(236, 236, 236);
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#cg3 #cb2:hover{
+    background: rgb(255, 226, 60);
+    color: black;
+}
+
+#team{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#ranks{
+    color: rgb(167, 164, 164);
+}
+
+#proj .card-footer{
+    background: rgb(236, 236, 236);
+}
+
+#proj .card-footer:hover{
+    background-color:rgb(255, 226, 60) ;
+}
+
