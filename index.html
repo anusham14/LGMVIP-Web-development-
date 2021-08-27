@@ -10,6 +10,9 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
             />
+            <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     
             <title>LGM VIP #task1</title>
         </head>
@@ -19,34 +22,50 @@
                 
             </nav>
 
-            <div>
-                <img src="music1.jpg" height="550px" width="100%">
-                <div id="1" class="card-img-overlay text-light" style="text-align:left ; margin-top:8%;">
-                    
-                    <h1 class="card-body" style="margin-top: 6%;"> One page promising to <br> fulfill all your needs! </h1>
-                    <h5>There's nothing more important than our good health<br> - that's our principal capital asset.</h5>
-                    
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="music1.jpg" class="d-block w-100" height="550px" width="100%">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000" height="550px" width="100%">
+                    <img src="music2.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="music3.jpg" class="d-block w-100" height="550px" width="100%">
+                  </div>
                 </div>
-                
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="background: rgba(255, 250, 205, 0); border: none;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="background: rgba(255, 250, 205, 0);  border: none;">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
+
+            <!-----------------INRODUCTION---------------->
             <div>
                 <br>
                 <h3 style="text-align: center;"><b> Welcome to Zippy </b></h3>
-                <div class="card-group" style="text-align: center;">
+                <div class="card-group" style="text-align: center;" id="cg1">
 
                     <div class="card">
 
                         <br>
-                        <i class="bi bi-bell">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <i class="bi bi-bell" id="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-bell" viewBox="0 0 16 16">
                                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                             </svg>
                         </i>
                         <div class="card-body">
                                 <h5 class="card-title">Notification</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <button class="card1-button">Learn more</button>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <div class="card-footer">
+                                    <button class="card-button">Learn more</button>
+                                </div>
+                                
                         </div>
                         
 
@@ -55,7 +74,7 @@
                     <div class="card">
 
                       <br>
-                      <i class="bi bi-chat-quote">
+                      <i class="bi bi-chat-quote" id="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
                             <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
                             <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
@@ -63,8 +82,10 @@
                       </i>
                       <div class="card-body">
                             <h5 class="card-title">Contact</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <button class="card1-button">Learn more</button>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <div class="card-footer">
+                                <button class="card-button">Learn more</button>
+                            </div>
                       </div>
 
                     </div>
@@ -72,7 +93,7 @@
                     <div class="card">
 
                       <br>
-                      <i class="bi bi-info-circle-fill">
+                      <i class="bi bi-info-circle-fill" id="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
                         </svg>
@@ -80,7 +101,9 @@
                       <div class="card-body">
                             <h5 class="card-title">About</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <button class="card1-button">Learn more</button>
+                            <div class="card-footer">
+                                <button class="card-button">Learn more</button>
+                            </div>
                       </div>
 
                     </div>
@@ -88,88 +111,95 @@
 
             </div>
 
+
+            <!-----------------PROJECTS---------------->
             <br><br><br>
             <h3 style="text-align: center;"> PROJECTS </h3>
             <br>
 
-            <div class="card-group" id="cg2">
-                <div class="card">
-                  <img src="project2.1.png" class="card-img-top" alt="...">
+            <div class="card-group" id="proj">
+                <div class="card" style="background:rgb(242, 242, 242);">
+                  <img src="project2.1.png" class="card-img-top" style="height: 76%;">
                   <div class="card-body">
                     <h5 class="card-title">PROJECT NAME</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                   <div class="card-footer">
-                    <button class="card2-button">Learn more</button>
+                    <button class="card-button">Learn more</button>
                   </div>
                 </div>
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card" style="background:rgb(242, 242, 242);">
+                    <img src="project3.jpg" class="card-img-top" style="height: 76%;">
                     <div class="card-body">
                       <h5 class="card-title">PROJECT NAME</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
-                        <button class="card2-button">Learn more</button>
+                        <button class="card-button">Learn more</button>
                     </div>
                   </div>
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                <div class="card" style="background:rgb(242, 242, 242);">
+                  <img src="project2.3.png" class="card-img-top" style="height: 76%;">
                   <div class="card-body">
                     <h5 class="card-title">PROJECT NAME</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                   </div>
                   <div class="card-footer">
-                    <button class="card2-button">Learn more</button>
+                    <button class="card-button">Learn more</button>
                   </div>
                 </div>
-                <div class="card">
-                  <img src="project1.jpg" class="card-img-top" alt="...">
+                <div class="card" style="background:rgb(242, 242, 242);">
+                  <img src="project1.jpg" class="card-img-top" style="height: 76%;">
                   <div class="card-body">
                     <h5 class="card-title">PROJECT NAME</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                   </div>
                   <div class="card-footer">
-                    <button class="card2-button">Learn more</button>
+                    <button class="card-button">Learn more</button>
                   </div>
                 </div>
               </div>
 
+
+            <!-----------------PRICING TABLE---------------->
             <div>
 
                 <br><br><br>
                 <h3 style="text-align: center;">Pricing table</h3> 
                 <br>
 
-                <div class="card-group">
+                <div class="card-group" id="cg2">
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
+                      
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h6 class="card-title">STANDARD PLAN</h6>
+                        <p class="card-text" id="price"> Free </p>
+                        <p class="card-text" id="desc">Online music<br>5 free downloads<br>Ads in between<br>Max 3 devices</p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <button class="card-button" id="cb">BUY</button>
                       </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
+                      
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <h6 class="card-title">BUSINESS PLAN</h6>
+                        <p class="card-text" id="price"> $15/YEAR </p>
+                        <p class="card-text" id="desc">Offline & online music<br>30 free downloads<br>Ads free music<br>Max 10 devices</p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <button class="card-button" id="cb">BUY</button>
                       </div>
                     </div>
                     <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
+                      
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <h6 class="card-title">PREMIUM PLAN</h6>
+                        <p class="card-text" id="price"> $25/YEAR </p>
+                        <p class="card-text" id="desc">Online & online music<br>All downloads in free<br>Ad free music<br>No limit</p>
                       </div>
                       <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <button class="card-button" id="cb">BUY</button>
                       </div>
                     </div>
                   </div>
@@ -179,72 +209,167 @@
             <div>
 
                 <br><br><br>
-                <h3 style="text-align: center;">Video Projects</h3> 
+                <h3 style="text-align: center; background-color: rgb(100, 77, 122); height: 500px;">Video Projects</h3> 
                 <br>
 
             </div>
 
+            <!-----------------ARTISTS/TEAM---------------->
             <div>
 
-                <br><br><br>
-                <h3 style="text-align: center;">Zippy team</h3> 
                 <br>
+                <h3 style="text-align: center;">TOP ARTISTS</h3> 
+                <br>
+                <div class="row row-cols-1 row-cols-md-3 g-3" style="margin-left: 300px;">
+                    <div class="col">
+                        <div class="card">
+                            <img src="arijit1.jpg" class="card-img-top" alt="..." id="team">
+                            <br>
+                            <p class="card-text"><b>ARIJIT SINGH</b></p>
+                            <p class="card-text" id="ranks">Rank #1</p>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <img src="artist2.jpg" class="card-img-top" alt="..." id="team">
+                            <br>
+                            <p class="card-text"><b>SHREYA GHOSAL</b></p> 
+                            <p class="card-text" id="ranks">Rank #4</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="artist3.jpeg" class="card-img-top" alt="..." id="team"> 
+                            <br>
+                            <p class="card-text"><b>NEHA KAKKAR</b></p>
+                            <p class="card-text" id="ranks">Rank #2</p>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <img src="arijit1.jpg" class="card-img-top" alt="..." id="team">
+                            <br>
+                            <p class="card-text"><b>ARIJIT SINGH</b></p>
+                            <p class="card-text" id="ranks">Rank #5</p> 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="artist2.jpg" class="card-img-top" alt="..." id="team">
+                            <br>
+                            <p class="card-text"><b>SHREYA GHOSAL</b></p>
+                            <p class="card-text" id="ranks">Rank #3</p>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <img src="artist3.jpeg" class="card-img-top" alt="..." id="team">
+                            <br>
+                            <p class="card-text"></p><b>NEHA KAKKAR</b></p>
+                            <p class="card-text" id="ranks">Rank #6</p> 
+                            <br><br>
+                        </div>
+                    </div>
+                    
+                </div>
 
             </div>
 
-            <div style="background:rgb(236, 236, 236); height: 1000px;">
+
+            <!----------------- LIFE IN ZIPPY ---------------->
+            <div style="background:rgb(236, 236, 236); height: 500px;">
 
                 <br><br><br>
                 <h3 style="text-align: center;">Life in Zippy</h3> 
                 <br>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                      <img src="" class="d-block w-100" width="100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000" width="100%">
+                      <img src="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="" class="d-block w-100" width="100%">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="background: rgba(255, 250, 205, 0); border: none;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="background: rgba(255, 250, 205, 0);  border: none;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+  
 
             </div>
 
-            <div>
+            <!----------------- NEWSLETTER ---------------->
 
-                <img src="newsletter1.jpg" width="100%">    
+            <div class="card">
+
+                <img src="newsletter1.jpg" width="100%"> 
+                
+                <form method="post" action="" style="text-align:center;" class="card-img-overlay text-dark">
+                    
+                  <h2 class="card-body" style="margin-top: 2%;">Subscribe Newsletter</h2>
+                  <br><br>Email :
+                  <input type="email" name="pass">
+
+                  <br><br>Password :
+                  <input type="pass" name="sub">
+                  <br><br>
+                  <input type="submit" class="btn btn-primary" name="Subscribe" value="Subscribe" style="background: rgb(100, 77, 122);">
+              <br><br>
+              </form>   
 
             </div>
 
+            <!----------------- BLOGS ---------------->
             <div>
 
                 <br><br><br>
                 <h3 style="text-align: center;">Blogs</h3> 
                 <br>
-                <div class="row row-cols-1 row-cols-md-3 g-3" style="text-align: center;">
+                <div class="row row-cols-1 row-cols-md-3 g-3" style="text-align: center;" id="cg3">
                     <div class="col">
                       <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="blog2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 class="card-title">OUR JOURNEY</h5>
+                          <p class="card-text" id="date"> 15 August,2021 </p>
+                          <p class="card-text" id="desc">Dive into our amazing journey<br> & ongoing projects,<br>click read more to know!</p>
+                       
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <button class="card-button" id="cb2">READ MORE</button>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="blog3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 class="card-title">USER EXPERIENCE</h5>
+                          <p class="card-text" id="date"> 14 May,2018 </p>
+                          <p class="card-text" id="desc">Check out the amazing reviews by our top users,<br>click read more to know!</p>
+                      
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <button class="card-button" id="cb2">READ MORE</button>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="blog1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 class="card-title">HOW WE STARTED</h5>
+                          <p class="card-text" id="date"> 24 July,2021 </p>
+                          <p class="card-text" id="desc">Wnna know how we started this amazing platform,<br>click read more to know!</p> 
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <button class="card-button" id="cb2">READ MORE</button>
                         </div>
                       </div>
                     </div>
@@ -253,13 +378,86 @@
 
             </div>
 
-            <div>
+            <!----------------- CONTACT ---------------->
 
-            </div>
+            <div class="card-group">
+                <div class="card" id="gmap">
+                  <img src="maps.jpg">
+                </div>
+                
+                <div class="card" style="background-color: rgb(255, 226, 60);">
+                  <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <form method="post" action="" style="text-align:left;">
+                        Name:<br>
+                        <input type="text" name="name">
+                            
+                        <br><br>Email :<br>
+                        <input type="email" name="pass">
 
-            <div>
+                        <br><br>Subject :<br>
+                        <input type="text" name="sub">
 
-            </div>
+                        <br><br>Message :<br>
+                        <input type="text" name="msg">
+                        <br><br>
+                        <input type="submit" class="btn btn-primary" name="Send" value="Send" style="background: rgb(100, 77, 122);">
+                    <br><br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!----------------- FOOTER ---------------->
+
+              <div class="row row-cols-1 row-cols-md-3 g-3" style="text-align: center;" id="cg3">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">ADDRESS</h5>
+                      <p>H-290 Palm beach road,<br>Navi Mumbai<br>Maharashtra</p>
+                    </div>
+                    
+                  </div>
+                    
+                </div>
+                
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">FOLLOW US</h5>
+                      <i class="bi bi-twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                      </i>&nbsp;
+                      <i class="bi bi-linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                      </i>&nbsp;
+                      <i class="bi bi-facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                      </i>
+                    </div>
+                    
+                  </div>
+                   
+                </div>
+                
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">CONTACT US</h5>
+                      <p>+123 456 789<br>zippy@enquiry.com<br>zippy.ly</p>
+                    </div>
+
+                  </div>
+                </div>
+                
+              </div>
 
         </body>
 
