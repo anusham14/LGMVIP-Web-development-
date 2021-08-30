@@ -6,4 +6,8 @@ function gMap(){
 
     var map = new google.maps.map(document.getElementById("gmap"),mapProp);
 }
+
+$('.carousel').carousel({
+    interval: 2000
+})
  
